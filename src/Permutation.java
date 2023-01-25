@@ -3,9 +3,11 @@ import java.util.Arrays;
 
 public class Permutation {
     public static void main(String[] args) {
-        Permu permu = new Permu();
-        ArrayList<String[]> result1 = permu.permutationLoop();
-        System.out.println(result1.stream());
+        ArrayList<String[]> result = Permu.permutationLoop();
+        for (int i = 0; i < result.size(); i++) {
+            String[] temp = result.get(i);
+            System.out.println(Arrays.toString(temp));
+        }
     }
 }
 
